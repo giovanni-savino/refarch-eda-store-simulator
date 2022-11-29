@@ -67,6 +67,9 @@ services:
       AMQP_PASSWORD: rabbit-pass
       AMQP_HOST: rabbitmq
       MQ_HOST: ibmmq
+      KAFKA_CERT_PWD: password
+      USER_CERT_PWD: password  
+      KAFKA_TOPIC_NAME: items
     depends_on:
       - kafka
       - ibmmq
